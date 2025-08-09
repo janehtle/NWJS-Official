@@ -59,6 +59,10 @@ button img {
     font-weight: bold;
 }
 
+.menu a:hover {
+    color: grey;
+}
+
 .logo {
     display: flex;
     flex-direction: column;

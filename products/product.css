@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, "Arial Narrow", Helvetica, sans-serif;
+}
+
+header {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    list-style-type: none;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 22px;
+    color: rgb(89, 88, 88);
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: black;
+}
+
+.conceptPhotoDiv {
+    height: 500px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.conceptPhotoDiv img {
+    width: 100%;
+    object-fit: fill;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(89, 88, 88);
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-bottom: 12px;
+}
+
+.socials {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    padding-bottom: 20px;
+
+}
+
+.socials a {
+    font-size: 30px;
+    color: black;
+}
+
+footer p {
+    font-size: 12px;
+}
