@@ -3,9 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>NWJS Contact</title>
+    <link rel="stylesheet" href="contact.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/products/product.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Contact Us!</h1>
+
+        <form>
+            <input id="subject" type="text" placeholder="Subject" required>
+            <input id="name" type="text" placeholder="Name" required>
+            <input id="email" type="email" placeholder="E-mail" required>
+            <textarea id="comment" placeholder="Write message..." required></textarea>
+        </form>
+
+        <div class="agreements">
+            <div class="check">
+                <input class="checkbox" type="checkbox">
+                <p class="terms">I agree to terms and services</p>
+            </div>
+            <button>Submit</button>
+        </div>
+    </main>
     
+    <footer>
+        <ul class="socials">
+            <li><a href="https://twitter.com/NewJeans_ADOR" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href="https://www.youtube.com/c/NewJeans_official" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a></li>
+            <li><a href="https://www.instagram.com/newjeans_official/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href="https://www.tiktok.com/@newjeans_official" target="_blank"><ion-icon name="logo-tiktok"></ion-icon></a></li>     
+            <li><a href="https://www.facebook.com/official.newjeans" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="https://github.com/janehtle" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
+        </ul>
+        <p>© Jane Le 2025. Made for educational and entertainment purposes only.</p>
+        <p>All images, videos, and content related to NewJeans are copyright of their respective owners (ADOR / HYBE Labels).</p>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="contact.js"></script>
 </body>
 </html>
