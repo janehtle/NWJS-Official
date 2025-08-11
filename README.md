@@ -16,6 +16,8 @@ I am taking an old project of mine ([nwjs-cafe](https://janehtle.github.io/nwjsc
     - Their login page and modal is very simple and easy on the eyes
 - http://www.crispnesss.com/index.html
     - I like the homepage with the brand name and the picture transition in the background. Could try doing a video/gif in my own project
+- https://awge.com/
+    - Figured out they got music to play after the user interacts with the page. Could opt for a button that allows user to play music or auto plays whenever they click anything on the DOM
 
 # Resources Used
 - W3Schools

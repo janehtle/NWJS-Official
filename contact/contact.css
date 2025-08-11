@@ -24,7 +24,7 @@ header {
 .menu {
     display: flex;
     justify-content: center;
-    gap: 5%;
+    gap: 58px;
     list-style-type: none;
 }
 

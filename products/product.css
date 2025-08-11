@@ -15,12 +15,13 @@ header {
     top: 0;
     background-color: white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
 }
 
 .menu {
     display: flex;
-    justify-content: center;
-    gap: 5%;
+    gap: 58px;
     list-style-type: none;
 }
 
@@ -33,6 +34,13 @@ header {
 
 .menu a:hover {
     color: grey;
+}
+
+#cart {
+    position: absolute;
+    right: 30px;
+    width: 30px;
+    cursor: pointer;
 }
 
 .conceptPhotoDiv {
