@@ -1,0 +1,91 @@
+{
+    "Discography": [
+        {
+        "name": "NewJeans 1st EP 'New Jeans'",
+        "price": 24.99,
+        "image": "/images/CD-debut.jpeg",
+        "alt": "debut EP album"
+        },
+
+        {
+        "name": "NewJeans 'OMG'",
+        "price": 19.99,
+        "image": "/images/CD-omg.jpeg",
+        "alt": "OMG first single CD"
+        },
+
+        {
+        "name": "NJ X POWERPUFF GIRLS 'Get Up' 2nd EP",
+        "price": 21.99,
+        "image": "/images/CD-getup.jpeg",
+        "alt": "second EP box powerpuff girls edition"
+        },
+
+        {
+        "name": "NewJeans 'How Sweet'",
+        "price": 24.99,
+        "image": "/images/CD-sweet.jpeg",
+        "alt": "How Sweet exclusive CD"
+        }
+    ],
+
+    "Fashion": [
+        {
+        "name": "TEE (BLUE)",
+        "price": 48.90,
+        "image": "/images/tee.jpeg",
+        "alt": "blue bunny mascot tshirt"
+        },
+
+        {
+        "name": "HOODIE (BLACK)",
+        "price": 115.90,
+        "image": "/images/hoodie.jpeg",
+        "alt": "bunnies club black hoodie"
+        },
+
+        {
+        "name": "'Supernatural' NJ X MURAKAMI Cross Bag",
+        "price": 22.98,
+        "image": "/images/bags.jpeg",
+        "alt": "NewJeans Supernatural handbags"
+        },
+
+        {
+        "name": "NJ Get Up Cat Plush Hairband",
+        "price": 16.00,
+        "image": "/images/headband.jpg",
+        "alt": "black cat ear headband"
+        }
+    ],
+
+    "Bunini": [
+        {
+        "name": "Bunini Plush (YELLOW MULTI)",
+        "price": 24.00,
+        "image": "/images/bunini.jpeg",
+        "alt": "yellow multicolored bunini plushie"
+        },
+
+        {
+        "name": "Bunini Doll Keychain",
+        "price": 16.00,
+        "image": "/images/keychain.jpeg",
+        "alt": "blue bunini keychain"
+        },
+
+        {
+        "name": "Bunini Doll Closet Hooded Zip-Up",
+        "price": 14.00,
+        "image": "/images/zipup.jpg",
+        "alt": "bunini gray zipup"
+        },
+
+        {
+        "name": "Bunini Doll Closet Fairy Core",
+        "price": 14.00,
+        "image": "/images/fairycore.jpeg",
+        "alt": "white fairycore bunini dress"
+        }
+    ]
+}
