@@ -144,3 +144,43 @@ footer p {
     font-size: 12px;
 }
 
+/*--------------media query------------------------*/
+
+@media screen and (min-width: 414px) and (max-width: 767px) {
+    body {
+        background: none;
+    }
+    
+    header {
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    main {
+        background-color: transparent;
+        width: 80%;
+        top: 40%;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    form input, textarea {
+        border: 1px solid grey;
+    }
+
+    .menu {
+        gap: 14%;
+    }
+
+    footer {
+        padding: 20px 0px;
+        background-color: transparent;
+        border-top: 1px solid rgb(207, 203, 203);
+    }
+
+    footer p {
+        text-align: center;
+    }
+}

@@ -116,3 +116,50 @@ footer {
 footer p {
     font-size: 12px;
 }
+
+/*--------------media query------------------------*/
+
+@media screen and (min-width: 414px) and (max-width: 767px) {
+    .socials, .conceptPhotoDiv img, h2 {
+        display: none;
+    }
+
+    .menu {
+        gap: 14%;
+    }
+
+    .conceptPhotoDiv {
+        height: auto;
+        width: auto;
+        margin: auto;
+    }
+
+    .container {
+        margin: auto;
+        margin-top: 25px;
+    }
+
+    .productContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        margin: auto;
+    }
+
+    .product {
+    width: auto;
+    margin-bottom: 50px;
+    }
+
+    .price {
+        margin-top: 12px;
+    }
+
+    footer {
+        padding: 20px 0px;
+    }
+
+    footer p {
+        text-align: center;
+    }
+}
