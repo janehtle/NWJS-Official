@@ -132,8 +132,19 @@ footer p {
         display: none;
     }
 
+    header {
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
     .menu {
         gap: 14%;
+    }
+
+    #cart {
+        width: 24px;
+        height: auto;
+        margin-left: auto;
     }
 
     .conceptPhotoDiv {
