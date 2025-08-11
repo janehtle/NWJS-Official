@@ -35,6 +35,7 @@ I am taking an old project of mine ([nwjs-cafe](https://janehtle.github.io/nwjsc
 
 # Timeline 
 (1st Iteration):
+
 Date assigned: July 29th 2025
 
 Date started: August 9th 2025
