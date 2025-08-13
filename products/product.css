@@ -127,7 +127,7 @@ footer p {
 
 /*--------------media query------------------------*/
 
-@media screen and (min-width: 414px) and (max-width: 767px) {
+@media screen and (min-width: 393px) and (max-width: 800px) {
     .socials, .conceptPhotoDiv img, h2 {
         display: none;
     }
@@ -182,3 +182,4 @@ footer p {
         text-align: center;
     }
 }
+

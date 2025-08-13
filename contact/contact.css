@@ -146,7 +146,7 @@ footer p {
 
 /*--------------media query------------------------*/
 
-@media screen and (min-width: 414px) and (max-width: 767px) {
+@media screen and (min-width: 393px) and (max-width: 800px) {
     body {
         background: none;
         background-color: rgb(238, 246, 251);
@@ -184,5 +184,11 @@ footer p {
 
     footer p {
         text-align: center;
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1024px) {
+    main {
+        width: 50%;
     }
 }
