@@ -88,6 +88,11 @@ h2 {
     margin: 0 auto;
 }
 
+.description {
+    font-size: 15px;
+    color: rgb(78, 78, 78);
+}
+
 .price {
     margin-top: 20px;
 }

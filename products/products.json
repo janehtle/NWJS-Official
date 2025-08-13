@@ -4,6 +4,7 @@
         "name": "NewJeans 1st EP 'New Jeans'",
         "price": 24.99,
         "image": "/images/CD-debut.jpeg",
+        "description": "Debut EP with Songs 'Attention' and 'Hype Boy'",
         "alt": "debut EP album"
         },
 
@@ -11,13 +12,15 @@
         "name": "NewJeans 'OMG'",
         "price": 19.99,
         "image": "/images/CD-omg.jpeg",
+        "description": "Official Single CD with Hit Songs “OMG” and “Ditto” ",
         "alt": "OMG first single CD"
         },
 
         {
-        "name": "NJ X POWERPUFF GIRLS 'Get Up' 2nd EP",
+        "name": "NewJeans 'Get Up' 2nd EP",
         "price": 21.99,
         "image": "/images/CD-getup.jpeg",
+        "description": "The POWERPUFF GIRLS X NJ Box ver.",
         "alt": "second EP box powerpuff girls edition"
         },
 
@@ -25,6 +28,7 @@
         "name": "NewJeans 'How Sweet'",
         "price": 24.99,
         "image": "/images/CD-sweet.png",
+        "description": "Exclusive Single CD for Hit Song 'How Sweet'",
         "alt": "How Sweet exclusive CD"
         }
     ],
@@ -34,6 +38,7 @@
         "name": "TEE (BLUE)",
         "price": 48.90,
         "image": "/images/tee.png",
+        "description": "TOKKI Blue Graphic Tee",
         "alt": "blue bunny mascot tshirt"
         },
 
@@ -41,6 +46,7 @@
         "name": "HOODIE (BLACK)",
         "price": 115.90,
         "image": "/images/hoodie.png",
+        "description": "Bunnies Club Graphic Black Hoodie",
         "alt": "bunnies club black hoodie"
         },
 
@@ -48,13 +54,15 @@
         "name": "'Supernatural' NJ X MURAKAMI Cross Bag",
         "price": 22.98,
         "image": "/images/bags.jpeg",
+        "description": "Crossover Bag (5 ver.) - MURAKAMI Collab",
         "alt": "NewJeans Supernatural handbags"
         },
 
         {
-        "name": "NJ Get Up Cat Plush Hairband",
+        "name": "NJ Get Up Cat Plush Headband",
         "price": 16.00,
         "image": "/images/headband.png",
+        "description": "Black Plush Cat Headband - LINE Collab",
         "alt": "black cat ear headband"
         }
     ],
@@ -64,6 +72,7 @@
         "name": "Bunini Plush (YELLOW MULTI)",
         "price": 24.00,
         "image": "/images/bunini.png",
+        "description": "Bunini Yellow Multi-Colored Plush",
         "alt": "yellow multicolored bunini plushie"
         },
 
@@ -71,6 +80,7 @@
         "name": "Bunini Doll Keychain",
         "price": 16.00,
         "image": "/images/keychain.png",
+        "description": "Blue Bunini Doll Keychain Small",
         "alt": "blue bunini keychain"
         },
 
@@ -78,6 +88,7 @@
         "name": "Bunini Doll Closet Hooded Zip-Up",
         "price": 14.00,
         "image": "/images/zipup.png",
+        "description": "Gray Hooded Zip-up for Bunini Closet",
         "alt": "bunini gray zipup"
         },
 
@@ -85,6 +96,7 @@
         "name": "Bunini Doll Closet Fairy Core",
         "price": 14.00,
         "image": "/images/fairycore.png",
+        "description": "White Fairy Core for Bunini Closet",
         "alt": "white fairycore bunini dress"
         }
     ]
