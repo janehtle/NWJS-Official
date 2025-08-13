@@ -1,9 +1,15 @@
 # NewJeans Official Website (eCommerce Project)
 
+# Disclaimer
+
+This website is for EDUCATIONAL PURPOSES ONLY. It is the result of an e-Commerce Project assigned by Road to Hire to practice HTML, CSS, and JavaScript skills. All content is credited to their original creators (NewJeans, ADOR, HYBE Labels) and other creators who shared on public sites and communities where their content is allowed to be specifically used freely for any type of project, commercial or personal.
+
 # My Why
 Fan-made website for Korean Pop group, NewJeans. Originally, I wanted to do books. However, the more I thought about my eCommerce website focusing on books, it was difficult for me to imagine how I wanted it to look, then operate later down the line. So I decided to opt for ramen, specifically the Samyang brand and their Buldak ramen line. But, that seemed too easy and I couldn’t see how much of a challenge that would be for me, as I feel that I should challenge myself more as a Coding Apprentice. Then I thought, what better idea than to revisit an old project of mine that I did in the past, where I had to learn code for the very first time. I think it would not just simply be a good idea, but something that will be rewarding when I see the difference in the coding skills when I was just a rookie to someone who is now more adept in coding.
 
 I am taking an old project of mine ([nwjs-cafe](https://janehtle.github.io/nwjscafe/)), which is a website that has no functionality and was supposed to be a fansite for the K-Pop group NewJeans, and turn it into a different website that is functional and not only promotes the group but their merch as well. They are my favorite group and after all that they have been through legally, their official websites are outdated and haven't been updated in a while. Therefore, as a fan, I wanted to revamp it in my own way.
+
+[Live Demo](https://main.d3ecsclncbbwbf.amplifyapp.com/)
 
 # Design Inspiration/Ideas
 - Y2K style (90s)
