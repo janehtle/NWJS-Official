@@ -1,6 +1,6 @@
 //add event listener to target button to give specific functionality
 document.querySelector("button").addEventListener("click", function(event) {
-    event.preventDefault();
+    event.preventDefault(); //stop the default action associated with a particular event from occurring.
 
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     const nameRegex = /^[a-zA-Z]{2,12}$/;
