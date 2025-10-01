@@ -9,7 +9,7 @@ Fan-made website for Korean Pop group, NewJeans. Originally, I wanted to do book
 
 I am taking an old project of mine ([nwjs-cafe](https://janehtle.github.io/nwjscafe/)), which is a website that has no functionality and was supposed to be a fansite for the K-Pop group NewJeans, and turn it into a different website that is functional and not only promotes the group but their merch as well. They are my favorite group and after all that they have been through legally, their official websites are outdated and haven't been updated in a while. Therefore, as a fan, I wanted to revamp it in my own way.
 
-[Live Demo](https://main.d3ecsclncbbwbf.amplifyapp.com/)
+[Live Demo](https://nwjs-official.vercel.app/)
 
 # Design Inspiration/Ideas
 - Y2K style (90s)
