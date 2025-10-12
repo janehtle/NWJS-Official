@@ -47,3 +47,15 @@ document.querySelector("button").addEventListener("click", function(event) {
     document.getElementById("comment").value = "";
     document.querySelector(".checkbox").checked = false; 
 });
+
+function displaySidebar() {
+    const sidebar = document.querySelector(".sidebar");
+
+    sidebar.style.display = "flex";
+}
+
+function hideSidebar() {
+    const sidebar = document.querySelector(".sidebar");
+
+    sidebar.style.display = "none";
+}

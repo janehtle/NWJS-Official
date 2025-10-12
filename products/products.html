@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="products.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="45px" viewBox="0 -960 960 960" width="45px" fill="gray"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="/contact/contact.html">Contact</a></li>
+                <li><a href="/cart/cart.html">Cart</a></li>
+            </ul>
+            <ul>
+                <li class="hideOnMobile"><a href="../index.html">Home</a></li>
+                <li class="hideOnMobile"><a href="products.html">Products</a></li>
+                <li class="hideOnMobile"><a href="/contact/contact.html">Contact</a></li>
+                <li class="hideOnMobile"><a href="/cart/cart.html">Cart</a></li>
+                <li class="hamburgerMenu" onclick="displaySidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="45px" viewBox="0 -960 960 960" width="45px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="mainContent">
+        <aside class="filterBar">
+            <h2>Filter</h2>
+
+            <div class="filterSection" id="byPrice">
+                <h3>Price</h3>
+                <label>
+                    <input type="radio" name="price" value="low-to-high">
+                    Lowest to Highest
+                </label>
+                <label>
+                    <input type="radio" name="price" value="high-to-low">
+                    Highest to Lowest
+                </label>
+            </div>
+
+            <div class="filterSection" id="byProduct">
+                <h3>Product Type</h3>
+                <label>
+                    <input type="checkbox" name="product-type" value="discography">
+                    Discography
+                </label>
+                <label>
+                    <input type="checkbox" name="product-type" value="fashion">
+                    Fashion
+                </label>
+                <label>
+                    <input type="checkbox" name="product-type" value="bunini">
+                    Bunini
+                </label>
+            </div>
+        </aside>
+
+        <main class="productList">
+            <section class="container" id="discography">
+                <div class="productContainer" id="discographyProducts">
+                    <!--<div class="product">
+                        <img src="/images/CD-debut.jpeg" alt="debut EP album">
+                        <p class="productName">NewJeans 1st EP 'New Jeans'</p>
+                        <h4 class="price">$24.99</h4>
+                    </div>
+                    
+                    <div class="product">
+                        <img src="/images/CD-omg.jpeg" alt="OMG first single CD">
+                        <p class="productName">NewJeans 'OMG'</p>
+                        <h4 class="price">$19.99</h4>
+                    </div>
+                    
+                    <div class="product">
+                        <img src="/images/CD-getup.jpeg" alt="second EP box powerpuff girls edition">
+                        <p class="productName">NJ X POWERPUFF GIRLS 'Get Up' 2nd EP </p>
+                        <h4 class="price">$21.99</h4>
+                    </div>
+                    
+                    <div class="product">
+                        <img src="/images/CD-sweet.png" alt="How Sweet exclusive CD">
+                        <p class="productName">NewJeans 'How Sweet'</p>
+                        <h4 class="price">$24.99</h4>
+                    </div>-->     
+                </div>
+            </section>
+
+            <section class="container" id="fashion">
+                <div class="productContainer" id="fashionProducts">
+                    <!--<div class="product">
+                        <img src="/images/tee.png" alt="blue bunny mascot tshirt">
+                        <p class="productName">TEE (BLUE)</p>
+                        <h4 class="price">$48.90</h4>
+                    </div>
+                    
+                    <div class="product">
+                        <img src="/images/hoodie.jpeg" alt="bunnies club black hoodie">
+                        <p class="productName">HOODIE (BLACK)</p>
+                        <h4 class="price">$115.90</h4>
+                    </div>
+                    
+                    <div class="product">
+                        <img src="/images/bags.jpeg" alt="NewJeans Supernatural handbags">
+                        <p class="productName">'Supernatural' NJ X MURAKAMI Cross Bag</p>
+                        <h4 class="price">$22.98</h4>
+                    </div>
+                    
+                    <div class="product">
+                        <img src="/images/headband.jpg" alt="black cat ear headband">
+                        <p class="productName">NJ Get Up Cat Plush Hairband</p>
+                        <h4 class="price">$16.00</h4>
+                    </div>-->     
+                </div>
+            </section>
+
+            <section class="container" id="bunini">
+                <div class="productContainer" id="buniniProducts">
+                    <!--<div class="product">
+                        <img src="/images/bunini.jpeg" alt="yellow multicolored bunini plushie">
+                        <p class="productName">Bunini Plush (YELLOW MULTI)</p>
+                        <h4 class="price">$24.00</h4>
+                    </div>
+                    
+                    <div class="product">
+                        <img src="/images/keychain.jpeg" alt="blue bunini keychain">
+                        <p class="productName">Bunini Doll Keychain</p>
+                        <h4 class="price">$16.00</h4>
+                    </div>
+                    
+                    <div class="product">
+                        <img src="/images/zipup.jpg" alt="bunini gray zipup">
+                        <p class="productName">Bunini Doll Closet Hooded Zip-Up</p>
+                        <h4 class="price">$14.00</h4>
+                    </div>
+                    
+                    <div class="product">
+                        <img src="/images/fairycore.jpeg" alt="white fairycore bunini dress">
+                        <p class="productName">Bunini Doll Closet Fairy Core</p>
+                        <h4 class="price">$14.00</h4>
+                    </div>-->     
+                </div>
+            </section>
+        </main>
+    </div>
+    
+
+    <script src="products.js"></script>
+</body>
+</html>

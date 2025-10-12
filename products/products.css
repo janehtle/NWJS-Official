@@ -1,0 +1,220 @@
+/* MOBILE: default view */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, "Arial Narrow", Helvetica, sans-serif;
+}
+
+header {
+    position: sticky;
+    overflow: hidden;
+    top: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    background-color: white;
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    height: 45px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+
+}
+
+nav a:hover {
+    background-color: white;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: white;
+    box-shadow: -8px 0 8px rgba(40, 40, 40, 0.604);
+    flex-direction: column;
+    display: none;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+    font-size: 22px;
+}
+
+.sidebar a {
+    width: 100%;
+    color: black;
+}
+
+.mainContent {
+    display: flex;
+}
+
+.filterBar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    height: 100vh;
+    padding: 15px;
+    border-right: 1px solid rgba(212, 211, 211, 0.894);
+}
+
+.filterSection {
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+    gap: 10px;
+}
+
+.productList {
+    /* display: flex;
+    flex-direction: column; */
+    position: relative;
+    left: 45%;
+    padding: 5px;
+}
+
+.product {
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+.product img {
+    height: 200px;
+    margin: 20px 0;
+}
+
+.description {
+    font-size: 15px;
+    color: rgb(78, 78, 78);
+    text-align: center;
+}
+
+.price {
+    margin-top: 20px;
+}
+
+.productName {
+    text-align: center;
+}
+
+.addCartBtn {
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    font-weight: 500;
+}
+
+.addCartBtn:hover {
+    cursor: pointer;
+}
+
+/* --------- media queries --------- */
+/* TABLET */
+@media (max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+        .productList {
+        left: 30%;
+    }
+
+    .productContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+/* TABLET -> DESKTOP (?? this is an interesting space) */
+@media (min-width: 801px) {
+    .hamburgerMenu {
+        display: none;
+    }
+
+    nav ul {
+        justify-content: center;
+        margin: 0 auto;
+        width: 70%;
+        padding: 20px;
+        font-size: 22px;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+        .productList {
+        left: 20%;
+    }
+
+    .productContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .productList {
+        left: 18%;
+    }
+
+    .productContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 100px;
+    }
+
+    .product img {
+        height: 250px;
+        margin: 20px 0;
+    }
+
+    .description {
+        font-size: 15px;
+        color: rgb(78, 78, 78);
+        text-align: center;
+    }
+
+    .price {
+        margin-top: 20px;
+    }
+}

@@ -1,70 +1,90 @@
+/* MOBILE: default view */
 * {
     margin: 0;
     padding: 0;
-}
-
-body {
-    background-color: #f0f0f0;
-    background: url(/images/contactbg.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
     font-family: Arial, "Arial Narrow", Helvetica, sans-serif;
 }
 
-header {
-    margin: 0 auto;
-    padding: 20px;
-    background-color: rgba(233, 239, 247, 0.672);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-
+body {
+    background-color: #b4ceed;
+    min-height: 100vh;
 }
 
-.menu {
+nav ul {
+    width: 100%;
+    list-style: none;
     display: flex;
-    justify-content: center;
-    gap: 58px;
-    list-style-type: none;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-.menu a {
+nav li {
+    height: 45px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
     text-decoration: none;
-    font-size: 22px;
-    color: black;
+    display: flex;
+    align-items: center;
+    color: white;
     font-weight: bold;
+
 }
 
-.menu a:hover {
-    color: grey;
+nav a:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
-/*-----------------------------------*/
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: white;
+    box-shadow: -8px 0 8px rgba(40, 40, 40, 0.604);
+    flex-direction: column;
+    display: none;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
 
-main {
-    background-color: rgba(233, 239, 247, 0.672);
-    width: 30%;    
+.sidebar li {
+    width: 100%;
+    font-size: 22px;
+}
+
+.sidebar a {
+    width: 100%;
+    color: black;
+}
+
+main, form {
+    display: flex;
+    flex-direction: column;
+}
+
+main {   
     position: fixed;
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    padding: 25px;
-    border-radius: 10px;
+    width: 80%;
+}
+
+form {
+    width: 100%;
+    gap: 12px;
 }
 
 h1 {
     padding: 20px;
-    color: rgb(42, 42, 42);
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    gap: 10px;
+    color: white;
 }
 
 form input, textarea {
@@ -72,6 +92,8 @@ form input, textarea {
     padding: 8px;
     border-radius: 5px;
     border: none;
+    border: 1px solid grey;
+
 }
 
 .agreements, .check  {
@@ -88,23 +110,24 @@ form input, textarea {
 }
 
 .checkbox {
-    height: 16px;
-    width: 16px;
+    height: 20px;
+    width: 20px;
 }
 
 button {
     font-size: 16px;
-    padding: 5px;
     border: 1px solid rgb(167, 166, 166);
     border-radius: 5px;
+    width: 100px;
 }
 
-button:hover, .checkbox:hover {
+.checkbox:hover {
     cursor: pointer;
 }
 
 button:hover {
     background-color: rgb(186, 183, 183);
+    cursor: pointer;
 }
 
 textarea {
@@ -112,20 +135,17 @@ textarea {
     font-family: Arial, "Arial Narrow", Helvetica, sans-serif;
 }
 
-/*--------------------------*/
-
 footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: black;
+    color: white;
+    z-index: 1;
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
     padding-bottom: 12px;
-    padding-top: 30px;
-    background-color: rgba(233, 239, 247, 0.672);
 }
 
 .socials {
@@ -133,62 +153,68 @@ footer {
     display: flex;
     gap: 30px;
     padding-bottom: 20px;
+
 }
 
 .socials a {
     font-size: 30px;
-    color: black;
+    color: white;
 }
 
 footer p {
     font-size: 12px;
+    text-align: center;
+    width: 90%; 
+    color: white;
 }
 
-/*--------------media query------------------------*/
 
-@media screen and (min-width: 393px) and (max-width: 800px) {
-    body {
-        background: none;
-        background-color: rgb(238, 246, 251);
+/* --------- media queries --------- */
+/* TABLET */
+@media (max-width: 800px) {
+    .hideOnMobile {
+        display: none;
     }
-    
-    header {
-        background-color: white;
-        box-shadow: none;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
+}
 
-    main {
-        background-color: transparent;
-        width: 80%;
-        top: 40%;
-    }
-
-    form {
+@media (max-width: 400px) {
+    .sidebar {
         width: 100%;
     }
+}
 
-    form input, textarea {
-        border: 1px solid grey;
+/* TABLET -> DESKTOP (?? this is an interesting space) */
+@media (min-width: 768px) {
+    main {
+        width: 60%
     }
 
-    .menu {
-        gap: 14%;
-    }
-
-    footer {
-        padding: 20px 0px;
-        background-color: white;
-        border-top: 1px solid rgb(207, 203, 203);
-    }
-
-    footer p {
-        text-align: center;
+    button {
+        padding: 8px;
+        width: 80px;
     }
 }
 
-@media screen and (min-width: 801px) and (max-width: 1024px) {
+@media (min-width: 801px) {
+    html, body {
+        background-image: url(/images/nwjsbg2.jpeg);
+        background-position: center;
+        background-repeat: none;
+        background-size: cover;
+    }
+    .hamburgerMenu {
+        display: none;
+    }
+
+    nav ul {
+        justify-content: center;
+        margin: 0 auto;
+        width: 70%;
+        padding: 20px;
+        font-size: 22px;
+    }
+
     main {
-        width: 50%;
+        width: 28%
     }
 }

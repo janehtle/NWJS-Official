@@ -1,66 +1,70 @@
+/* MOBILE: default view */
 * {
     margin: 0;
     padding: 0;
-}
-
-body {
     font-family: Arial, "Arial Narrow", Helvetica, sans-serif;
 }
 
-#video {    
-    height: 100%;
+body {
+    background-color: #1b4ca3;
+    min-height: 100vh;
+}
+
+#video, #musicBtn {
+    display: none;
+}
+
+nav ul {
     width: 100%;
-    object-fit: cover;
-    position: absolute;
-    z-index: -1;
-}
-
-header, footer, img, nav, .socials {
-    z-index: 1;
-}
-
-header {
-    margin: 0 auto;
-    width: 70%;
-    padding: 20px;
-}
-
-button {
-    position: fixed;   
-    top: 10px;
-    right: 20px;
-    padding: 6px 10px;
-    background-color: #4b515a50;
-    border: none;
-    border-radius: 100%;
-    cursor: pointer;
-    z-index: 100;         
-}
-
-button:hover {
-    background-color: #4b515a;
-}
-
-button img {
-    height: 24px;
-}
-
-.menu {
+    list-style: none;
     display: flex;
-    justify-content: center;
-    gap: 5%;
-    list-style-type: none;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-.menu a {
+nav li {
+    height: 45px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
     text-decoration: none;
-    font-size: 22px;
+    display: flex;
+    align-items: center;
     color: white;
     font-weight: bold;
+
 }
 
-.menu a:hover {
-    color: grey;
+nav a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: white;
+    box-shadow: -8px 0 8px rgba(40, 40, 40, 0.604);
+    flex-direction: column;
+    display: none;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+    font-size: 22px;
+}
+
+.sidebar a {
+    width: 100%;
+    color: black;
 }
 
 .logo {
@@ -75,8 +79,8 @@ button img {
     z-index: 1;
 }
 
-img {
-    height: 200px;
+#nwjsLogo {
+    height: 150px;
 }
 
 footer {
@@ -107,34 +111,76 @@ footer {
 
 footer p {
     font-size: 12px;
+    text-align: center;
+    width: 90%; 
 }
 
-/*-------media query for mobile--------*/
 
-@media screen and (max-width: 800px) {
-    #video, button, .socials {
+/* --------- media queries --------- */
+/* TABLET */
+@media (max-width: 800px) {
+    .hideOnMobile {
         display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+
+/* TABLET -> DESKTOP (?? this is an interesting space) */
+@media (min-width: 801px) {
+    #video {
+        display: block;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+        z-index: -1; /* keeps video behind content */
     }
 
     body {
-        background: url(/images/mobilebg.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        min-height: 100vh;
-        width: 100%;
-        position: absolute;
+        background-color: transparent; /* removes blue bg */
+        font-size: 18px;
     }
 
-    .menu {
-        gap: 14%;
+    .hamburgerMenu {
+        display: none;
     }
 
-    img {
-        width: 140%;
-        height: 150%;
+    nav ul {
+        justify-content: center;
+        margin: 0 auto;
+        width: 70%;
+        padding: 20px;
+        font-size: 22px;
     }
 
-    footer p {
-        text-align: center;
+    #musicBtn {
+    background-color: #4b515a50;
+    border: none;
+    border-radius: 100%;
+    font-size: 28px;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: white;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+    display: block;
+    }
+
+    #musicBtn:hover {
+        background-color: #4b515a;
+    }
+
+    #nwjsLogo {
+        height: 200px;
     }
 }
+

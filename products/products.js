@@ -17,15 +17,55 @@ fetch("products.json")
             `<img src="${product.image}" alt="${product.alt}">
             <p class="productName">${product.name}</p>
             <p class="description">${product.description}</p>
-            <h4 class="price">$${product.price.toFixed(2)}</h4>`;
+            <h4 class="price">$${product.price.toFixed(2)}</h4>
+            <button class="addCartBtn">Add to cart</button>`;
             container.appendChild(productDiv); //will take its place in productDiv and display on DOM
         });
         }
 
         console.log(data); //inspected console in the browser, Response object present
 
+        //addeventlistener for filter by price
+        const priceRadios = document.querySelectorAll('input[name="price"]');
+        priceRadios.forEach(radio => {
+            radio.addEventListener("change", sortByPrice);
+        });
+
     })
     .catch(error => console.error("Error loading products:", error)); //display error if Response object not found or data not fetched
+
+//filter by price
+function sortByPrice() {
+    const selected = document.querySelector('input[name="price"]:checked')?.value;
+    if (!selected) return;
+
+    const categories = ["discography", "fashion", "bunini"];
+
+    categories.forEach(category => {
+        const container = document.getElementById(`${category}Products`);
+        const productsArray = Array.from(container.querySelectorAll(".product"));
+
+        productsArray.sort((a, b) => {
+            const priceA = parseFloat(a.querySelector(".price").textContent.replace("$", ""));
+            const priceB = parseFloat(b.querySelector(".price").textContent.replace("$", ""));
+            return selected === "low-to-high" ? priceA - priceB : priceB - priceA;
+        });
+
+        productsArray.forEach(product => container.appendChild(product));
+    });
+}
+
+function displaySidebar() {
+    const sidebar = document.querySelector(".sidebar");
+
+    sidebar.style.display = "flex";
+}
+
+function hideSidebar() {
+    const sidebar = document.querySelector(".sidebar");
+
+    sidebar.style.display = "none";
+}
 
 
 

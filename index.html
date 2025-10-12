@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NWJS Official Home</title>
+    <title>NWJS Official Page</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,23 +13,34 @@
 
     <header>
         <nav>
-            <ul class="menu">
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="45px" viewBox="0 -960 960 960" width="45px" fill="gray"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="products/product.html">Products</a></li>
+                <li><a href="products/products.html">Products</a></li>
                 <li><a href="contact/contact.html">Contact</a></li>
+                <li><a href="cart/cart.html">Cart</a></li>
+            </ul>
+            <ul>
+                <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                <li class="hideOnMobile"><a href="products/products.html">Products</a></li>
+                <li class="hideOnMobile"><a href="contact/contact.html">Contact</a></li>
+                <li class="hideOnMobile"><a href="cart/cart.html">Cart</a></li>
+                <li class="hamburgerMenu" onclick="displaySidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="45px" viewBox="0 -960 960 960" width="45px" fill="white"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
             </ul>
         </nav>
 
-        <button id="playBtn"><img src="images/musicnote.png" alt="music note"></button>
-        <audio id="song" loop>
-            <source src="media/asap.mp3" type="audio/mpeg">
-        </audio>
+        <button id="musicBtn">
+            <img src="images/musicnote.png" alt="music note button">
+        </button>
     </header>
 
+    <audio id="song" loop>
+        <source src="media/asap.mp3" type="audio/mpeg">
+    </audio>
+
     <div class="logo">
-        <img src="images/logonwjs.png" alt="NewJeans logo in Korean">
+        <img id="nwjsLogo" src="images/logonwjs.png" alt="NewJeans logo in Korean">
     </div>
-    
 
     <footer>
         <ul class="socials">
@@ -39,7 +50,7 @@
             <li><a href="https://www.tiktok.com/@newjeans_official" target="_blank"><ion-icon name="logo-tiktok" aria-label="Leading to external site TikTok"></ion-icon></a></li>     
             <li><a href="https://www.facebook.com/official.newjeans" target="_blank"><ion-icon name="logo-facebook" aria-label="Leading to external site Facebook"></ion-icon></a></li>
         </ul>
-        <p>© Jane Le 2025. Fan-made for educational and entertainment purposes only.</p>
+        <p>Fan-made for educational and entertainment purposes only.</p>
         <p>All images, videos, and content related to NewJeans are copyright of their respective owners (ADOR / HYBE Labels).</p>
     </footer>
 
