@@ -18,7 +18,10 @@ fetch("products.json")
             <p class="productName">${product.name}</p>
             <p class="description">${product.description}</p>
             <h4 class="price">$${product.price.toFixed(2)}</h4>
-            <button class="addCartBtn">Add to cart</button>`;
+            <div>
+                <button class="removeCartBtn">-</button>
+                <button class="addCartBtn">+</button>
+            </div>`;
             container.appendChild(productDiv); //will take its place in productDiv and display on DOM
         });
         }

@@ -87,6 +87,21 @@ nav a:hover {
     gap: 10px;
 }
 
+#cartBtn {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 10px 12px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+#cartBtn:hover {
+    cursor: pointer;
+}
+
 .productList {
     /* display: flex;
     flex-direction: column; */
@@ -122,7 +137,7 @@ nav a:hover {
     text-align: center;
 }
 
-.addCartBtn {
+.addCartBtn, .removeCartBtn {
     border: none;
     padding: 8px;
     border-radius: 5px;
@@ -132,8 +147,9 @@ nav a:hover {
     font-weight: 500;
 }
 
-.addCartBtn:hover {
+.addCartBtn:hover, .removeCartBtn:hover {
     cursor: pointer;
+    background-color: rgb(77, 76, 76);
 }
 
 /* --------- media queries --------- */

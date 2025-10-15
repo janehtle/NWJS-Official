@@ -96,33 +96,13 @@ form input, textarea {
 
 }
 
-.agreements, .check  {
-    display: flex;
-}
-
-.agreements {
-    margin-top: 18px;
-    gap: 78px;
-}
-
-.check {
-    gap: 20px;
-}
-
-.checkbox {
-    height: 20px;
-    width: 20px;
-}
-
 button {
     font-size: 16px;
     border: 1px solid rgb(167, 166, 166);
     border-radius: 5px;
-    width: 100px;
-}
-
-.checkbox:hover {
-    cursor: pointer;
+    width: 80px;
+    margin-top: 24px;
+    padding: 8px;
 }
 
 button:hover {
