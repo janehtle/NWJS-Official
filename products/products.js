@@ -34,6 +34,12 @@ fetch("products.json")
             radio.addEventListener("change", sortByPrice);
         });
 
+        //addeventlistener for filter by product
+        const productCheckboxes = document.querySelectorAll('input[name="product-type"]');
+        productCheckboxes.forEach(checkbox => {
+            checkbox.addEventListener("change", sortByProduct);
+        });
+
     })
     .catch(error => console.error("Error loading products:", error)); //display error if Response object not found or data not fetched
 
@@ -55,6 +61,27 @@ function sortByPrice() {
         });
 
         productsArray.forEach(product => container.appendChild(product));
+    });
+}
+
+//filter by product
+function sortByProduct() {
+    const selectedTypes = Array.from(document.querySelectorAll('input[name="product-type"]:checked'))
+        .map(cb => cb.value);
+
+    const allSections = ["discography", "fashion", "bunini"];
+
+    allSections.forEach(type => {
+        const section = document.getElementById(type);
+        if (!section) return;
+
+        //if no checkboxes selected, show all products
+        if (selectedTypes.length === 0) {
+            section.style.display = "block";
+        } else {
+            //show products if it's one of the selected types, otherwise hide it
+            section.style.display = selectedTypes.includes(type) ? "block" : "none"; //conditional exp
+        }
     });
 }
 
